@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eclipse Tattoo & Piercing — Brighton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- GRAIN OVERLAY -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <nav id="nav">
+    <a class="nav-logo" onclick="showPage('home')">
+      <span class="logo-accent">E</span>CLIPSE
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a onclick="showPage('home')" data-page="home" class="active">Home</a></li>
+      <li><a onclick="showPage('piercing')" data-page="piercing">Piercing</a></li>
+      <li><a onclick="showPage('book')" data-page="book">Book</a></li>
+      <li><a onclick="showPage('contact')" data-page="contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <a onclick="showPage('home'); closeMenu()">Home</a>
+    <a onclick="showPage('piercing'); closeMenu()">Piercing</a>
+    <a onclick="showPage('book'); closeMenu()">Book</a>
+    <a onclick="showPage('contact'); closeMenu()">Contact</a>
+  </div>
+
+  <!-- ─────────────── HOME ─────────────── -->
+  <div class="page active" id="page-home">
+    <section class="hero">
+      <div class="hero-bg-text" aria-hidden="true">ECLIPSE</div>
+      <div class="hero-inner">
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>
+          North Laine, Brighton
+        </p>
+        <h1 class="hero-heading">
+          Ink &amp;<br>
+          <em>Piercing</em><br>
+          in the Heart<br>
+          of Brighton.
+        </h1>
+        <p class="hero-sub">Eclipse Tattoo and Piercing Studio &mdash; Sydney Street, North Laine</p>
+        <p class="hero-desc">
+          An established independent studio offering tattooing across all styles
+          and professional piercing. Walk-ins welcome, booking recommended.
+        </p>
+        <div class="cta-row">
+          <a class="btn-primary" onclick="showPage('book')">Book Now</a>
+          <a class="btn-ghost" onclick="showPage('piercing')">View Piercing</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <div class="stats-strip">
+      <div class="stat-block">
+        <span class="stat-num">7</span>
+        <span class="stat-label">Days a Week</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block">
+        <span class="stat-num">All</span>
+        <span class="stat-label">Tattoo Styles</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block">
+        <span class="stat-num">Pro</span>
+        <span class="stat-label">Piercing &amp; Jewellery</span>
+      </div>
+    </div>
+
+    <section class="home-about">
+      <div class="about-left">
+        <p class="section-tag">About the Studio</p>
+        <h2 class="section-heading">An independent<br>studio with <em>soul.</em></h2>
+      </div>
+      <div class="about-right">
+        <p>Eclipse has been a fixture of Brighton's North Laine for years — a creative space where artists and clients collaborate to make permanent art. Whether you're after delicate fine line work or bold traditional pieces, our collective brings your vision to life.</p>
+        <p>Our piercing suite operates to the highest safety standards, with a wide selection of implant-grade jewellery available in studio.</p>
+        <div class="about-ctas">
+          <a class="btn-ghost-sm" onclick="showPage('book')">Book a Session &rarr;</a>
+          <a class="btn-ghost-sm" onclick="showPage('piercing')">View Piercing &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-logo"><span>E</span>CLIPSE TATTOO &amp; PIERCING</div>
+      <div class="footer-copy">32 Sydney Street, Brighton BN1 4EP &mdash; &copy; 2024 Eclipse Tattoo &amp; Piercing Studio</div>
+    </footer>
+  </div>
+
+  <!-- ─────────────── PIERCING ─────────────── -->
+  <div class="page" id="page-piercing">
+    <div class="page-header">
+      <p class="eyebrow"><span class="eyebrow-line"></span>Body Modification</p>
+      <h1 class="page-title">Piercing</h1>
+      <p class="page-subtitle">Professional piercing by experienced practitioners in a safe, sterile studio environment.</p>
+    </div>
+
+    <div class="piercing-body">
+      <div class="piercing-left">
+        <p class="section-tag" style="margin-bottom:24px">What We Offer</p>
+        <ul class="piercing-list">
+          <li class="piercing-item">
+            <span class="piercing-name">Earlobes</span>
+            <span class="piercing-dot"></span>
+          </li>
+          <li class="piercing-item">
+            <span class="piercing-name">Helix</span>
+            <span class="piercing-dot"></span>
+          </li>
+          <li class="piercing-item">
+            <span class="piercing-name">Septum</span>
+            <span class="piercing-dot"></span>
+          </li>
+          <li class="piercing-item">
+            <span class="piercing-name">Nostril</span>
+            <span class="piercing-dot"></span>
+          </li>
+          <li class="piercing-item">
+            <span class="piercing-name">Nipple</span>
+            <span class="piercing-dot"></span>
+          </li>
+          <li class="piercing-item">
+            <span class="piercing-name">Navel</span>
+            <span class="piercing-dot"></span>
+          </li>
+        </ul>
+        <p class="piercing-note">Additional piercings available — ask in studio.</p>
+      </div>
+
+      <div class="piercing-right">
+        <div class="info-card">
+          <div class="info-card-accent"></div>
+          <h3>Your Safety,<br>Our Priority.</h3>
+          <p>All piercings carried out by experienced professionals in a safe, sterile environment. Wide selection of body jewellery available in studio.</p>
+          <div class="badge-row">
+            <span class="badge">Sterile Environment</span>
+            <span class="badge">Experienced Piercers</span>
+            <span class="badge">Implant-Grade Jewellery</span>
+            <span class="badge">Walk-ins Welcome</span>
+            <span class="badge">Aftercare Advice</span>
+          </div>
+        </div>
+
+        <div class="info-card-secondary">
+          <p class="section-tag" style="margin-bottom:12px">Jewellery</p>
+          <p>A wide selection of implant-grade titanium, gold, and steel jewellery is available to purchase in studio. Our piercers can help you choose the right size and style for your anatomy.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-logo"><span>E</span>CLIPSE TATTOO &amp; PIERCING</div>
+      <div class="footer-copy">32 Sydney Street, Brighton BN1 4EP &mdash; &copy; 2024 Eclipse Tattoo &amp; Piercing Studio</div>
+    </footer>
+  </div>
+
+  <!-- ─────────────── BOOK ─────────────── -->
+  <div class="page" id="page-book">
+    <div class="page-header">
+      <p class="eyebrow"><span class="eyebrow-line"></span>Get in the Chair</p>
+      <h1 class="page-title">Book</h1>
+      <p class="page-subtitle">Ready to get inked or pierced? Here's how to get started.</p>
+    </div>
+
+    <div class="book-body">
+      <div class="book-left">
+        <h2 class="book-how-heading">How to Book</h2>
+        <p class="book-intro">For custom tattoos, contact your chosen artist directly via Instagram. Walk-ins accepted subject to availability, 7 days a week.</p>
+
+        <div class="booking-steps">
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <div class="step-content">
+              <strong>Custom Tattoos</strong>
+              <p>DM your chosen artist on Instagram to discuss your idea, placement, and sizing. They'll walk you through the process and arrange a session.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <div class="step-content">
+              <strong>Walk-Ins</strong>
+              <p>Come in any day of the week. Subject to artist availability. Smaller pieces and flash designs welcome without an appointment.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <div class="step-content">
+              <strong>Piercing</strong>
+              <p>Walk in or message us on Instagram. No appointment necessary for most piercings — just come in and our piercer will look after you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="book-right">
+        <h2 class="form-title">Send a Message</h2>
+        <form class="contact-form" onsubmit="handleForm(event)">
+          <div class="form-group">
+            <label for="b-name">Your Name</label>
+            <input type="text" id="b-name" name="name" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label for="b-email">Email Address</label>
+            <input type="email" id="b-email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="b-msg">Message</label>
+            <textarea id="b-msg" name="message" placeholder="Tell us about your idea, placement, size, or any questions you have..." required></textarea>
+          </div>
+          <button class="btn-primary" type="submit" id="formBtn">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-logo"><span>E</span>CLIPSE TATTOO &amp; PIERCING</div>
+      <div class="footer-copy">32 Sydney Street, Brighton BN1 4EP &mdash; &copy; 2024 Eclipse Tattoo &amp; Piercing Studio</div>
+    </footer>
+  </div>
+
+  <!-- ─────────────── CONTACT ─────────────── -->
+  <div class="page" id="page-contact">
+    <div class="page-header">
+      <p class="eyebrow"><span class="eyebrow-line"></span>Find Us</p>
+      <h1 class="page-title">Contact</h1>
+      <p class="page-subtitle">We're open 7 days a week in the heart of North Laine, Brighton.</p>
+    </div>
+
+    <div class="contact-body">
+      <div class="contact-details">
+        <div class="contact-block">
+          <p class="contact-label">Address</p>
+          <p class="contact-val">32 Sydney Street</p>
+          <p class="contact-sub">Brighton, BN1 4EP<br>North Laine</p>
+        </div>
+        <div class="contact-block">
+          <p class="contact-label">Hours</p>
+          <p class="contact-val">Open 7 Days a Week</p>
+          <p class="contact-sub">Walk-ins welcome &middot; Booking recommended for custom work</p>
+        </div>
+        <div class="contact-block">
+          <p class="contact-label">Instagram</p>
+          <a href="https://instagram.com/eclipse_tattoo_brighton" target="_blank" rel="noopener" class="instagram-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+            </svg>
+            @eclipse_tattoo_brighton
+          </a>
+        </div>
+        <div class="contact-block">
+          <p class="contact-label">Enquiries</p>
+          <p class="contact-sub">For bookings and general enquiries, DM us on Instagram or use the form on our <a class="text-link" onclick="showPage('book')">Book page.</a></p>
+        </div>
+      </div>
+
+      <div class="contact-map-block">
+        <div class="map-placeholder">
+          <div class="map-pin-icon">
+            <svg width="32" height="40" viewBox="0 0 32 40" fill="none">
+              <path d="M16 0C7.163 0 0 7.163 0 16C0 28 16 40 16 40C16 40 32 28 32 16C32 7.163 24.837 0 16 0Z" fill="#c41e3a"/>
+              <circle cx="16" cy="16" r="6" fill="#0d0d0d"/>
+            </svg>
+          </div>
+          <p class="map-studio-name">Eclipse Tattoo &amp; Piercing</p>
+          <p class="map-address">32 SYDNEY STREET<br>BRIGHTON BN1 4EP</p>
+          <a href="https://maps.google.com/?q=32+Sydney+Street+Brighton+BN1+4EP" target="_blank" rel="noopener" class="btn-ghost-sm" style="margin-top:24px">Open in Google Maps &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-logo"><span>E</span>CLIPSE TATTOO &amp; PIERCING</div>
+      <div class="footer-copy">32 Sydney Street, Brighton BN1 4EP &mdash; &copy; 2024 Eclipse Tattoo &amp; Piercing Studio</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
